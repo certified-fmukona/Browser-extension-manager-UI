@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.extention-bar {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 18px;
+    justify-content: space-between;
+    width: 1500px;
+    margin: 45px auto 0 auto;
+    margin-bottom: 55px;
+}
+
+.extention-bar .ext-img {
+    margin-left: 10px;
+}
+
+.extention-bar .sun-img {
+    background-color: blue;
+    padding: 22px;
+    align-items: right;
+    border-radius: 18px;
+    margin-right: 10px;
+}
+
+.extensions-list {
+    /* background-color: aqua; */
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1520px;
+    align-items: center;
+    margin: 45px auto 0 auto;
+}
+
+.extensions-list .header-extension {
+    /* background-color: red; */
+    font-size: 35px;
+}
+
+.extensions-list .extension-filters {
+    /* background-color: red;   */
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+    margin-right: -20px;
+}
+
+.extensions-list .extension-filters button {
+    background-color: blueviolet; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
