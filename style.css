@@ -1,81 +1,27 @@
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.extention-bar {
-    background-color: grey;
-    display: flex;
-    align-items: center;
-    margin-top: 45px;
-    padding: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius: 18px;
-    justify-content: space-between;
-    width: 1500px;
-    margin: 45px auto 0 auto;
-    margin-bottom: 55px;
-}
-
-.extention-bar .ext-img {
-    margin-left: 10px;
-    overflow: hidden;
-}
-
-.extention-bar .sun-img {
-    background-color: blue;
-    padding: 22px;
-    align-items: right;
-    border-radius: 18px;
-    margin-right: 10px;
-    overflow: hidden;
-}
-
-.extensions-list {
-    /* background-color: aqua; */
-    margin-left: 45px;
+.header {
+    background-color: hsl(226, 25%, 17%);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1520px;
-    align-items: center;
-    margin: 45px auto 0 auto;
+    
 }
 
-.extensions-list .header-extension {
-    /* background-color: red; */
-    font-size: 35px;
-}
-
-.extensions-list .extension-filters {
-    /* background-color: red;   */
-    display: flex;
-    gap: 10px;
-    padding: 0 20px;
-    margin-right: -20px;
-}
-
-.extensions-list .extension-filters button {
-    background-color: blueviolet; 
+#theme-button {
+    background-color: hsl(225, 23%, 24%);
     border: none;
-    padding: 20px 30px;
-    border-radius: 30px;
-}
-
-.extension-cards {
-    background-color: red;
-    align-content: center;
+    padding: 5px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    align-items: center;
     justify-content: center;
-    width: 1500px;
-    margin: 0 auto;
-}
-
-.extension-cards .extension {
-    background-color: blue;
-    border-radius: 25px;
-    padding: 100px 200px;
+    border-radius: 8px;
 }
