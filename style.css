@@ -59,6 +59,23 @@ body {
 .extensions-list .extension-filters button {
     background-color: blueviolet; 
     border: none;
-    padding: 10px 20px;
+    padding: 20px 30px;
     border-radius: 30px;
+}
+
+.extension-cards {
+    background-color: red;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.extension-cards .extension {
+    background-color: blue;
+    border-radius: 25px;
+    padding: 100px 200px;
 }
