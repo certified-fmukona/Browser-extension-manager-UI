@@ -20,6 +20,7 @@ body {
 
 .extention-bar .ext-img {
     margin-left: 10px;
+    overflow: hidden;
 }
 
 .extention-bar .sun-img {
@@ -28,6 +29,7 @@ body {
     align-items: right;
     border-radius: 18px;
     margin-right: 10px;
+    overflow: hidden;
 }
 
 .extensions-list {
