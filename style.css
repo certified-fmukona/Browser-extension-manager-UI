@@ -1,27 +1,103 @@
-body {
-    height: 100%;
+* {
     margin: 0;
     padding: 0;
+    color: white;
+    max-width: 100%;
+}
+
+body {
     background: linear-gradient(180deg, #040918 0%, #091540 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    width: 1500px;
+    margin-top: 2rem;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
 }
+
+
+/* header */
 
 .header {
     background-color: hsl(226, 25%, 17%);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    padding: .8rem;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
 }
 
 #theme-button {
     background-color: hsl(225, 23%, 24%);
     border: none;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
 }
+
+/* extension bar */
+
+.extension-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.filters {
+    display: flex;
+    gap: .5rem;
+}
+
+.filters button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 1.8rem;
+    background-color: hsl(226, 25%, 17%);
+}
+
+.filters button:hover {
+    transition: 200ms;
+    background-color: #535868;
+}
+
+.filters button:focus {
+    transition: 200ms;
+    background-color: #f35c54;
+    color: #040918;
+}
+
+/* cards */
+
+.card {
+    background-color: #1f2535;
+    width: 300px;
+    border-radius: 1rem;
+    border-style: solid;
+    border: white;
+    border-width: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+#remove {
+    background-color: #1f2535;
+    border-radius: 1rem;
+    border-color: blue;
+    border: solid;
+    border-width: thin;
+}
+.card .inputs {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+
