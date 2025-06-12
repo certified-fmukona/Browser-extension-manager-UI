@@ -1,8 +1,14 @@
+@font-face {
+    font-family: 'noto';
+    src: url("./assets/fonts/NotoSans-VariableFont.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
     color: white;
     max-width: 100%;
+    font-family: 'noto';
 }
 
 body {
@@ -57,7 +63,7 @@ body {
     padding: 8px 15px;
     border: none;
     border-radius: 1.8rem;
-    background-color: hsl(226, 25%, 17%);
+    background-color: #202636;
 }
 
 .filters button:hover {
@@ -75,47 +81,64 @@ body {
 
 .card {
     background-color: #1f2535;
-    width: 500px;
+    width: 400px;
     height: 200px;
     border-radius: 1rem;
     border-style: solid;
-    border: white;
-    border-width: 5px;
+    border: solid;
+    border-width: thin;
+    border-color: grey;
     display: flex;
     flex-direction: column;
 }
 
-.icon {
+.card-details {
     display: flex;
     margin: 1rem;
 }
 
 .icon-description {
     margin-left: 1rem;
+    width: 250px;
 }
 
 p {
     font-weight: 100;
     color: grey;
+    margin-top: 1rem;
 }
 
 .inputs {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .inputs button {
     padding: .2rem;
 }
+
 #remove {
-    background-color: #1f2535;
+    background-color: #202636;
     border-radius: 1rem;
     border: solid;
     border-width: thin;
+    border-color: grey;
 }
+
+#remove:hover {
+    transition: 200ms;
+    background-color: #535868;
+}
+
+#remove:active {
+    transition: 200ms;
+    background-color: #f35c54;
+    color: #040918;
+}
+
 .card .inputs {
     display: flex;
     justify-content: center;
-    gap: 22rem;
+    gap: 16.8rem;
     border-color: gray;
 }
 
