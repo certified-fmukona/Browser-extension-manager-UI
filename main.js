@@ -1,4 +1,4 @@
-[
+const extensionsData = [
     {
         "logo": "./assets/images/logo-devlens.svg",
         "name": "DevLens",
@@ -71,4 +71,37 @@
         "description": "Enhanced developer console with advanced filtering and logging.",
         "isActive": true
     }
-  ]
+  ];
+
+    // Function to create card HTML
+    function createCard(extension) {
+      return `
+        <div class="card">
+            <div class="card-details">
+                <div class="icon">
+                    <img src=${extension.logo} alt=${extension.name}>
+                </div>
+                <div class="icon-description">
+                    <h2>${extension.name}</h2>
+                    <p>${extension.description}</p>
+                </div>
+            </div>
+            <div class="inputs">
+                <button class="remove">Remove</button>
+                <label class="switch">
+                    <input type="checkbox" ${extension.isActive ? 'checked' : ''}>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        `;
+    }
+
+    // Function to populate cards
+    function populateCards() {
+      const container = document.querySelector('.grid');
+      container.innerHTML = extensionsData.map(createCard).join('');
+    }
+
+    // Initialize when page loads
+    document.addEventListener('DOMContentLoaded', populateCards);
